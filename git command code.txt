@@ -1,0 +1,24 @@
+Delete git History:
+rm -rf .git
+
+Reinit:
+git init
+git add .
+git commit -m "Clean initial commit"
+
+Remote & Push:
+git remote add origin https://github.com/brendan-okeyiwobi/lytude-web.git
+git branch -M main
+git push -u origin main (git push -u origin main --force)
+
+Pull and Merge:
+git pull origin main --allow-unrelated-histories
+
+
+Making a change:
+# Step 1: Make your change locally
+git add .
+git commit -m "Fix image path bug"
+
+# Step 2: Push to GitHub
+git push origin main

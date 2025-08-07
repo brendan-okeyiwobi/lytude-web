@@ -1,0 +1,472 @@
+/* app/globals.css */
+
+@font-face {
+  font-family: 'Audiowide';
+  /* Custom name for your font */
+  src: url('../fonts/Audiowide/Audiowide-Regular.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura';
+  /* Custom name for your font */
+  src: url('../fonts/Futura/Futura Book font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaItalic';
+  /* Custom name for your font */
+  src: url('../fonts/Futura/Futura Book Italic font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaBold';
+  /* Custom name for your font */
+  src: url('../fonts/Futura/Futura Bold font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaHeavy';
+  /* Custom name for your font */
+  src: url('../fonts/Futura/Futura Heavy font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'The Humble';
+  /* Custom name for your font */
+  src: url('../fonts/The Humble Script/The Humble.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --h1-font: 'Audiowide', sans-serif;
+  --h3-font: 'FuturaBold', sans-serif;
+  --p-font: 'Futura', sans-serif;
+  --p-italic-font: 'FuturaItalic', sans-serif;
+  --p-bold: 'FuturaHeavy', sans-serif;
+  --p-cursive-font: 'The Humble', sans-serif;
+
+  line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --h1-text-color: #000000;
+  --h2-text-color: #1f1f1f;
+  --h3-text-color: #404040;
+  --p-text-color: #000000;
+  --p-link-color: #7099ff;
+
+  --page-background-color: #fffeee;
+  --white-black-background-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+
+    --h1-text-color: #fff000;
+    --h2-text-color: #e5e5e5;
+    --h3-text-color: #cacaca;
+    --p-text-color: #ffffff;
+    --p-link-color: #7099ff;
+
+    --page-background-color: #000000;
+    --white-black-background-color: #000000;
+  }
+
+  html {
+    color-scheme: dark;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--page-background-color);
+
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  max-width: 2500px !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+}
+
+.inner-content {
+  max-width: 1250px !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+}
+
+
+h1 {
+  font-family: var(--h1-font);
+  color: var(--h1-text-color);
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-family: var(--h1-font);
+  color: var(--h2-text-color);
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: var(--h3-font);
+  color: var(--h3-text-color);
+  font-size: 2rem;
+  margin: 0
+}
+
+p {
+  font-family: var(--p-font);
+  color: var(--p-text-color);
+}
+
+p.italic {
+  font-family: var(--p-italic-font);
+  font-style: italic;
+  color: var(--p-text-color);
+}
+
+p.cursive {
+  font-family: var(--p-cursive-font);
+}
+
+p.secondary {
+  /* color: var(--secondary-color); */
+  opacity: 0.75;
+}
+
+b {
+  font-family: var(--p-bold);
+  color: var(--p-text-color);
+  font-weight: bolder;
+}
+
+a {
+  font-family: inherit;
+  color: #7099ff;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+/* button {
+  font-family: 'Futura';
+  padding: 12px 24px;
+  background-color: #000000;
+  border: none;
+  border-bottom: 2px solid red;
+  color: #FFF000;
+  border: "none";
+  border-radius: 7.5px 7.5px 0 0;
+  cursor: pointer;
+  font-size: 1rem;
+  height: auto;
+  min-height: 45px;
+  transition: 0.1s linear;
+}
+
+button:hover {
+  opacity: 0.75;
+  border-bottom: 0px solid red;
+}
+
+button.disabled {
+  opacity: 0.9;
+}
+
+button.disabled:hover {
+  opacity: 0.9;
+} */
+
+.button {
+  font-family: 'Futura';
+  position: relative;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  background-color: #000000;
+  color: #FFF000;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 1rem;
+}
+
+.destroy {
+  background-color: #ff000020;
+  color: #ff0000;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #ff0000;
+  transition: transform 200ms ease-in; 
+  transform: translateY(100%);
+}
+
+.destroy::after {
+  background: #ff0000;
+}
+
+.button:hover::after {
+  transform: translateY(0);
+}
+
+.scale-on-hover {
+  transition: 0.1s linear;
+  box-shadow: 0px 2.5px 2.5px rgba(0, 0, 0, 0.25);
+}
+
+.scale-on-hover:hover {
+  transform: scale(1.025);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.scale-on-hover2 {
+  transition: 0.1s linear;
+  box-shadow: 0px 1.5px 2.5px rgba(0, 0, 0, 0.25);
+}
+
+.scale-on-hover2:hover {
+  transform: scale(1.015);
+  box-shadow: 0px 2.5px 5px rgba(0, 0, 0, 0.52);
+}
+
+.text-limited-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0
+}
+
+.text-limited-4 {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.white-black-background {
+  background-color: var(--white-black-background-color);
+}
+
+
+.hide-scrollbar {
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+
+  overflow-y: scroll;
+  /* or 'auto' */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}
+
+::-webkit-scrollbar {
+  width: 7.5px;
+  height: 5px;
+  transition: 0.1s linear;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 7.5px 0 0 7.5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(128, 128, 128, 0.25);
+  border-radius: 7.5px 0 0 7.5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(128, 128, 128, 0.5);
+}
+
+/* For Firefox */
+scrollbar {
+  width: 7.5px;
+  height: 5px;
+  transition: 0.1s linear;
+}
+
+scrollbar-track {
+  background: transparent;
+  border-radius: 7.5px 0 0 7.5px;
+}
+
+scrollbar-thumb {
+  background: #fff000;
+  border-radius: 7.5px 0 0 7.5px;
+}
+
+scrollbar-thumb:hover {
+  background: #7f7f00;
+}
+
+
+.divider-fade {
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+.fade-away {
+  mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0) 2.5px,
+      rgba(0, 0, 0, 1) 25px,
+      rgba(0, 0, 0, 1) calc(100% - 25px),
+      rgba(0, 0, 0, 0) calc(100% - 2.5px));
+  -webkit-mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 0) 2.5px,
+      rgba(0, 0, 0, 1) 25px,
+      rgba(0, 0, 0, 1) calc(100% - 25px),
+      rgba(0, 0, 0, 0) calc(100% - 2.5px));
+}
+
+.fade-away-right {
+  mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 1) 0px,
+      rgba(0, 0, 0, 1) calc(100% - 25px),
+      rgba(0, 0, 0, 0) calc(100% - 2.5px));
+  -webkit-mask-image: linear-gradient(to right,
+      rgba(0, 0, 0, 1) 0px,
+      rgba(0, 0, 0, 1) calc(100% - 25px),
+      rgba(0, 0, 0, 0) calc(100% - 2.5px));
+}
+
+#nprogress .bar {
+  background: linear-gradient(to right, #ff0000, #fff000) !important;
+  height: 2px !important;
+}
+
+
+@media only screen and (min-width: 2500px) {
+  .content {
+    mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0) 0px,
+        rgba(0, 0, 0, 1) 75px,
+        rgba(0, 0, 0, 1) calc(100% - 75px),
+        rgba(0, 0, 0, 0) calc(100% - 0px));
+    -webkit-mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0) 0px,
+        rgba(0, 0, 0, 1) 75px,
+        rgba(0, 0, 0, 1) calc(100% - 75px),
+        rgba(0, 0, 0, 0) calc(100% - 0px));
+  }
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 10% 10% 0 0;
+  background: #000000;
+  box-shadow: 0 0 0 0 rgba(255, 0, 0, 1);
+  animation: pulse 4s infinite;
+  /* Increased duration */
+  position: relative;
+}
+
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 rgba(255, 0, 0, 1);
+  animation: inherit;
+  /* Increased duration here as well */
+  animation-delay: -2s;
+  /* Adjusted delays relative to new duration if needed */
+}
+
+.loader:after {
+  animation-delay: -4s;
+}
+
+@keyframes pulse {
+
+  /* First pulse: red */
+  0% {
+    box-shadow: 0 0 0 0px rgba(255, 240, 0, 1);
+  }
+
+  24.9% {
+    box-shadow: 0 0 0 15px rgba(255, 240, 0, 0);
+  }
+
+  /* Nearly instant jump to red when yellow is fully faded */
+  25% {
+    box-shadow: 0 0 0 0px rgba(255, 0, 0, 1);
+  }
+
+  49.9% {
+    box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+  }
+
+  /* Switch back to yellow instantly when red is gone */
+  50% {
+    box-shadow: 0 0 0 0px rgba(255, 240, 0, 1);
+  }
+
+  74.9% {
+    box-shadow: 0 0 0 15px rgba(255, 240, 0, 0);
+  }
+
+  75% {
+    box-shadow: 0 0 0 0px rgba(255, 0, 0, 1);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+  }
+}
