@@ -28,7 +28,7 @@ export const metadata: Metadata = {
         images: [logo],
     },
     authors: [{ name: "Nzubechukwu Brendan Okey-iwobi" }],
-    other: {"google-site-verification": "ewawsLX9_9TZyMFjdeqxxGSWXpYSk6vUaAgtwwqakFE"
+    other: {"google-site-verification": "fLf5p9tNjUwkjOvDncsHGx1ZkBdLGLVm09Tit_SKYrA"
 }
 };
 
